@@ -126,7 +126,7 @@ a {
     text-shadow: 1px 1px 0px rgba(0,0,0,.2);
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
-    font-size: 16px;
+    font-size: 0.9em;
     font-weight: 300;
     color: #1F1F1F;
     border: none;
@@ -307,6 +307,19 @@ a {
     color: #5E5E5E;
 }
 
+@media screen and (max-width: 430px) {
+    #menu li {
+        width: 100%;
+    }
+    #menu a {
+        line-height: 45px;
+    }
+    #footer p {
+        font-size: 0.8em;
+    }
+
+}
+
 @media screen and (max-width: 700px) {
     #content {
         width: 95%;
@@ -336,7 +349,6 @@ a {
     #menu ul {
         float: none;
         padding: 0;
-        width: 70%;
         margin: 0 auto;
     }
 }
