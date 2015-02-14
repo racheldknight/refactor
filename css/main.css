@@ -155,7 +155,7 @@ a {
 
 .post {
     overflow: hidden;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     border-bottom: 1px solid #E7EBED;
 }
 
@@ -312,5 +312,11 @@ a {
         width: 95%;
         margin: 10px;
         float: none;
+    }
+    #sidebar {
+        padding: 0;
+        float: none;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
