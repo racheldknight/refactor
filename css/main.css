@@ -307,7 +307,32 @@ a {
     color: #5E5E5E;
 }
 
+@media screen and (min-width: 1080px) {
+    #content {
+        width: 65%;
+    }
+    #sidebar {
+        width: 30%;
+    }
+    #
+}
+
+@media screen and (min-width: 1280px) {
+    #content {
+        width: 70%;
+    }
+    #sidebar {
+        width: 20%
+    }
+}
+
 @media screen and (min-width: 971px) {
+    #logo {
+        margin-left: 20px;
+    }
+    #menu a {
+        font-size: 1em;
+    }
     #content {
         margin-right: 20px;
     }
