@@ -320,3 +320,23 @@ a {
         margin-right: 10px;
     }
 }
+@media screen and (max-width: 660px) {
+    #page {
+        padding-top: 10px;
+    }
+    #logo {
+        float: none;
+    }
+    #logo h1 {
+        text-align: center;
+    }
+    #menu {
+        float: none;
+    }
+    #menu ul {
+        float: none;
+        padding: 0;
+        width: 70%;
+        margin: 0 auto;
+    }
+}
