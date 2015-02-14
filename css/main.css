@@ -307,18 +307,6 @@ a {
     color: #5E5E5E;
 }
 
-@media screen and (max-width: 430px) {
-    #menu li {
-        width: 100%;
-    }
-    #menu a {
-        line-height: 45px;
-    }
-    #footer p {
-        font-size: 0.8em;
-    }
-
-}
 
 @media screen and (max-width: 700px) {
     #content {
@@ -333,6 +321,7 @@ a {
         margin-right: 10px;
     }
 }
+
 @media screen and (max-width: 660px) {
     #page {
         padding-top: 10px;
@@ -350,5 +339,23 @@ a {
         float: none;
         padding: 0;
         margin: 0 auto;
+    }
+    #menu li {
+        width: 20%;
+    }
+    #menu a {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #menu li {
+        width: 100%;
+    }
+    #menu a {
+        line-height: 45px;
+    }
+    #footer p {
+        font-size: 0.8em;
     }
 }
