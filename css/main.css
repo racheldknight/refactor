@@ -307,8 +307,12 @@ a {
     color: #5E5E5E;
 }
 
+@media screen and (min-width: 971px) {
+    
+}
 
-@media screen and (max-width: 700px) {
+
+@media screen and (max-width: 970px) {
     #content {
         width: 95%;
         margin: 10px;
