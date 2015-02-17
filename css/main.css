@@ -116,7 +116,7 @@ a {
 
 #menu a {
     display: block;
-    line-height: 100px;
+    line-height: 50px;
     margin-right: 1px;
     padding: 0px 20px 0px 20px;
     text-decoration: none;
@@ -313,6 +313,9 @@ a {
 
     #menu {
         float: right;
+    }
+    #menu a {
+        line-height: 100px;
     }
 }
 
