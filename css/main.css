@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: #050505 url(../img/img01.jpg) repeat;
+    background: #FFFFFF url(../img/img05.jpg) repeat;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     color: #5B5B5B;
@@ -36,10 +36,6 @@ p, ul, ol {
 
 a {
     color: #5E5E5E;
-}
-
-#wrapper {
-    background: #FFFFFF url(../img/img05.jpg) repeat;
 }
 
 /* Header */
@@ -291,6 +287,7 @@ a {
 /* Footer */
 
 #footer {
+    background: #050505 url(../img/img01.jpg) repeat;
     margin: 0 auto;
     padding: 25px 0 25px 0;
     font-family: 'Abel', sans-serif;
