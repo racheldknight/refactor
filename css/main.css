@@ -193,10 +193,10 @@ a {
     margin-bottom: 30px;
 }
 
-.more {
-    display: block;
-    float: left;
-    padding: 5px;
+.more,
+.comments {
+    display: inline-block;
+    padding: 8px;
     margin-right: 10px;
     background: #222222;
     color: #FFFFFF;
@@ -204,14 +204,8 @@ a {
     text-decoration: none;
 }
 
-.comments {
-    display: block;
-    float: left;
-    padding: 5px;
-    background: #222222;
-    color: #FFFFFF;
-    text-align: center;
-    text-decoration: none;
+.more {
+    margin-right: 10px;
 }
 
 /* Sidebar */
