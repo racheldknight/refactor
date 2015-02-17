@@ -56,7 +56,6 @@ a {
 
 #header {
     width: 100%;
-    height: 150px;
     margin: 0 auto;
     padding: 0px 0px;
 }
@@ -64,7 +63,6 @@ a {
 /* Logo */
 
 #logo {
-    float: left;
     margin: 0;
     padding: 0;
     color: #FFFFFF;
@@ -74,6 +72,7 @@ a {
     line-height: 120px;
     letter-spacing: -2px;
     font-size: 3.8em;
+    text-align: center
 }
 
 #logo h1 a {
@@ -104,22 +103,15 @@ a {
 /* Menu */
 
 #menu {
-    float: right;
-    height: 90px;
     margin: 0 auto;
     padding: 0;
 }
 
 #menu ul {
-    float: right;
-    margin: 0;
-    padding: 20px 0px 0px 0px;
     list-style: none;
     line-height: normal;
-}
-
-#menu li {
-    float: left;
+    padding: 0;
+    margin: 0;
 }
 
 #menu a {
@@ -311,11 +303,32 @@ a {
     color: #5E5E5E;
 }
 
+@media screen and (min-width: 500px) {
+    #menu li {
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 695px) {
+    #logo {
+        float: left;
+    }
+    #logo h1 {
+        text-align: left
+    }
+
+    #menu {
+        float: right;
+    }
+}
+
 @media screen and (min-width: 1080px) {
     #content {
+        float: right;
         width: 65%;
     }
     #sidebar {
+        float: left;
         width: 30%;
     }
 }
@@ -330,68 +343,13 @@ a {
 }
 
 @media screen and (min-width: 971px) {
-    #logo {
-        margin-left: 20px;
-    }
     #menu a {
         font-size: 1em;
     }
     #content {
-        float: right;
         margin-right: 20px;
     }
     #sidebar {
-        float: left;
         margin-left: 20px;
-    }
-}
-
-@media screen and (max-width: 970px) {
-    #content {
-        width: 95%;
-        margin: 10px;
-    }
-    #sidebar {
-        padding: 0;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-}
-
-@media screen and (max-width: 660px) {
-    #page {
-        padding-top: 10px;
-    }
-    #logo {
-        float: none;
-    }
-    #logo h1 {
-        text-align: center;
-    }
-    #menu {
-        float: none;
-    }
-    #menu ul {
-        float: none;
-        padding: 0;
-        margin: 0 auto;
-    }
-    #menu li {
-        width: 20%;
-    }
-    #menu a {
-        font-size: 1em;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    #menu li {
-        width: 100%;
-    }
-    #menu a {
-        line-height: 45px;
-    }
-    #footer p {
-        font-size: 0.8em;
     }
 }
