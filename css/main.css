@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: #050505 url(../img/img01.jpg) repeat;
+    background: #FFFFFF url(../img/img05.jpg) repeat;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     color: #5B5B5B;
@@ -38,8 +38,10 @@ a {
     color: #5E5E5E;
 }
 
-#wrapper {
-    background: #FFFFFF url(../img/img05.jpg) repeat;
+#header-wrapper,
+#page {
+    margin: 0 auto;
+    max-width: 1280px;
 }
 
 /* Header */
@@ -48,9 +50,12 @@ a {
     overflow: hidden;
 }
 
+#header-wrapper img {
+    width: 100%;
+}
+
 #header {
     width: 100%;
-    height: 150px;
     margin: 0 auto;
     padding: 0px 0px;
 }
@@ -58,7 +63,6 @@ a {
 /* Logo */
 
 #logo {
-    float: left;
     margin: 0;
     padding: 0;
     color: #FFFFFF;
@@ -68,6 +72,7 @@ a {
     line-height: 120px;
     letter-spacing: -2px;
     font-size: 3.8em;
+    text-align: center
 }
 
 #logo h1 a {
@@ -98,27 +103,20 @@ a {
 /* Menu */
 
 #menu {
-    float: right;
-    height: 90px;
     margin: 0 auto;
     padding: 0;
 }
 
 #menu ul {
-    float: right;
-    margin: 0;
-    padding: 20px 0px 0px 0px;
     list-style: none;
     line-height: normal;
-}
-
-#menu li {
-    float: left;
+    padding: 0;
+    margin: 0;
 }
 
 #menu a {
     display: block;
-    line-height: 100px;
+    line-height: 50px;
     margin-right: 1px;
     padding: 0px 20px 0px 20px;
     text-decoration: none;
@@ -148,8 +146,6 @@ a {
 /* Content */
 
 #content {
-    float: right;
-    width: 660px;
     padding: 0px 0px 0px 0px;
 }
 
@@ -197,10 +193,10 @@ a {
     margin-bottom: 30px;
 }
 
-.more {
-    display: block;
-    float: left;
-    padding: 5px;
+.more,
+.comments {
+    display: inline-block;
+    padding: 8px;
     margin-right: 10px;
     background: #222222;
     color: #FFFFFF;
@@ -208,20 +204,13 @@ a {
     text-decoration: none;
 }
 
-.comments {
-    display: block;
-    float: left;
-    padding: 5px;
-    background: #222222;
-    color: #FFFFFF;
-    text-align: center;
-    text-decoration: none;
+.more {
+    margin-right: 10px;
 }
 
 /* Sidebar */
 
 #sidebar {
-    float: left;
     margin: 0px;
     padding: 30px 0px 0px 0px;
 }
@@ -287,6 +276,7 @@ a {
 /* Footer */
 
 #footer {
+    background: #050505 url(../img/img01.jpg) repeat;
     margin: 0 auto;
     padding: 25px 0 25px 0;
     font-family: 'Abel', sans-serif;
@@ -307,28 +297,29 @@ a {
     color: #5E5E5E;
 }
 
-@media screen and (min-width: 1080px) {
-    #content {
-        width: 65%;
-    }
-    #sidebar {
-        width: 30%;
+@media screen and (min-width: 500px) {
+    #menu li {
+        display: inline-block;
     }
 }
 
-@media screen and (min-width: 1280px) {
-    #content {
-        width: 70%;
+@media screen and (min-width: 695px) {
+    #logo {
+        float: left;
     }
-    #sidebar {
-        width: 20%
+    #logo h1 {
+        text-align: left
+    }
+
+    #menu {
+        float: right;
+    }
+    #menu a {
+        line-height: 100px;
     }
 }
 
 @media screen and (min-width: 971px) {
-    #logo {
-        margin-left: 20px;
-    }
     #menu a {
         font-size: 1em;
     }
@@ -340,52 +331,22 @@ a {
     }
 }
 
-@media screen and (max-width: 970px) {
+@media screen and (min-width: 1080px) {
     #content {
-        width: 95%;
-        margin: 10px;
+        float: right;
+        width: 65%;
     }
     #sidebar {
-        padding: 0;
-        margin-left: 10px;
-        margin-right: 10px;
+        float: left;
+        width: 30%;
     }
 }
 
-@media screen and (max-width: 660px) {
-    #page {
-        padding-top: 10px;
+@media screen and (min-width: 1280px) {
+    #content {
+        width: 70%;
     }
-    #logo {
-        float: none;
-    }
-    #logo h1 {
-        text-align: center;
-    }
-    #menu {
-        float: none;
-    }
-    #menu ul {
-        float: none;
-        padding: 0;
-        margin: 0 auto;
-    }
-    #menu li {
-        width: 20%;
-    }
-    #menu a {
-        font-size: 1em;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    #menu li {
-        width: 100%;
-    }
-    #menu a {
-        line-height: 45px;
-    }
-    #footer p {
-        font-size: 0.8em;
+    #sidebar {
+        width: 20%
     }
 }
